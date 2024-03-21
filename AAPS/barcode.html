@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barcode Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+            box-sizing: border-box;
+        }
+
+        h3 {
+            text-align: center;
+            font-size: 35px;
+            font-family: "Nunito Sans";
+            font-weight: lighter;
+            margin-top: 5px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 55px;
+            font-family: "Nunito Sans";
+            font-weight: lighter;
+            margin-top: 40px;
+        }
+
+        .logo {
+            position: relative;
+            margin-left: 40px;
+            margin-top: 40px;
+            margin-bottom: -80px;
+            width: 200px;
+            height: 80px;
+        }
+
+        .nav1 {
+            background: #0082e6;
+            height: 140px;
+            width: 100%;
+        }
+
+        h1 {
+            float: left;
+            color: white;
+            font-size: 40px;
+            line-height: 80px;
+            margin-top: 40px;
+            margin-left: 80px;
+            font-family: "Nunito Sans";
+            font-weight: lighter;
+        }
+
+        nav1 u1 {
+            float: right;
+            margin-right: 20px;
+        }
+
+        nav ul li {
+            display: inline-block;
+            line-height: 40px;
+            margin: 0 5px;
+        }
+
+        .l1 {
+            margin-left: 350px;
+            margin-right: 50px;
+        }
+
+        .l2 {
+            margin-right: 50px;
+        }
+
+        .l3 {
+            margin-left: 1200px;
+            margin-top: -50px;
+            position: relative;
+        }
+
+        .E1 {
+            margin-left: 50px;
+        }
+
+        .top {
+            margin-top: -30px;
+            padding: 0;
+        }
+
+        .l1,
+        .l2,
+        .l3,
+        .E1{
+            height: 50px;
+        }
+        a{
+            color: black;
+            position: relative;
+        }
+        a::after{
+            content: "";
+            position: absolute;
+            background-color: black;
+            height: 0.5px;
+            width: 0;
+            left: 0;
+            bottom: -10px;
+        }
+        a:hover::after{
+            width: 100%;
+        }
+        .barco1{
+            text-align: center;
+        }
+        #barco2{
+            text-align: center;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="top">
+        <nav>
+            <label class="logo">
+                <img class="logo" src="./aaps logo.jpeg" alt="This is a logo"></label>
+
+            <ul class="nav2">
+                <li class="l1"><a href="#">FEATURES</a></li>
+                <li class="l2"><a href="#">LEARN  MORE</a></li>
+                <li class="l2"><a href="#">HELP</a></li>
+                <li class="l2"><a href="#">FAQ</a></li>
+                <li class="l2"><a href="#">CONTACT  US</a></li>
+            </ul>
+            <ul class="l3">
+                <li><span>+91-8767488645</span></li>
+                <li class="E1"><a href="./index.html"><span>EXIT</span></a></li>
+            </ul>
+        </nav>
+        <div class="nav1">
+            <header>
+                <h1>BARCODE GENERATOR</h1>
+            </header>
+        </div>
+    </div>
+    <section>
+        <h2>APPS Billsoft v1</h2>
+        <h3>Enter the details</h3>
+    </section>
+
+        <div class="barco1">
+            <label>Barcode:</label>
+            <input type="text" name="barcodename" id="barcodename">
+            <br><br>
+            <button id="btn_b">Generate Barcode</button>
+        </div>
+        <br><br>
+        <div id="barco2">
+            <svg id="barcode"></svg>
+            <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
+            <script >
+                document.getElementById("btn_b").addEventListener("click", function () {
+                    var text = document.getElementById("barcodename").value;
+                    JsBarcode("#barcode", text);
+                });
+            </script>
+        </div>
+</body>
+
+</html>

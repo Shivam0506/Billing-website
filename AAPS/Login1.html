@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <title>
+        Login Page
+    </title>
+    <link rel="stylesheet" href="main_style.css" />
+    <style>
+        input[type="text"] {
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-radius: 0px;
+            box-shadow: none;
+        }
+
+        input[type="password"]:focus {
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-radius: 0px;
+            box-shadow: none;
+            border-bottom: 1px solid #0078d7b3;
+        }
+
+        .modal-footer {
+            border-top: none;
+        }
+
+        .agree_class li {
+            text-align: justify-all;
+        }
+
+        .form-group col-md-6 {
+            display: inline;
+            margin: auto;
+        }
+
+        .btn col-xs-8 btn_blue {
+            left: 300px;
+        }
+
+        .form-group col-md-offset-2 {
+            display: inline block;
+            position: relative;
+            left: 300px;
+        }
+
+        .inner-page {
+            padding: 20px;
+        }
+
+        .login {
+            font-family: Segoe UI, helvetica neue, Helvetica, Arial, sans-serif;
+            color: white;
+            font-size: 42px;
+            font-weight: 300px;
+        }
+
+        .apps {
+            text-align: center;
+            font-weight: 200;
+            font-size: 48px;
+        }
+
+        .btn_blue {
+            background-color: #0078d7b3;
+            color: #fff;
+            border-radius: 0;
+            padding: 6px 12px;
+            margin-bottom: 0;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 1.42857143;
+            text-align: center;
+            white-space: nowrap;
+            width: 66.66666667%;
+            border: 1px solid transparent;
+            font-family: Segoe UI, helvetica neue, Helvetica, Arial, sans-serif;
+            display: inline-block;
+            position: relative;
+            left: 350px;
+        }
+
+        .apct {
+            display: inline-block;
+            position: relative;
+            left: 475px;
+            margin-bottom: 5px;
+            font-weight: 700;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <form method="post" action="./" id="form1">
+                <nav class="navbar container_height70 header_top_color">
+                            <a class="navbar-brand"><img class="img-responsive mar_top_desktop" src="aaps logo.jpeg"
+                                    height="200px" width="170px"></a>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav mobile_nav desk_top">
+                                <li><a class="li_lings" href="/features/">FEATURES</a></li>
+                                <li><a class="li_lings" href="/pricing/">LEARN MORE</a></li>
+                                <li><a class="li_lings" href="/gst/gst-info/">HELP </a></li>
+                                <li><a class="li_lings" href="/faq/">FAQ</a></li>
+                                <li><a class="li_lings" href="/contact/">CONTACT US</a></li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right mobile_nav mobile_up">
+                                <li><a class="li_lings sign_login sing_up"><span
+                                            class="glyphicon glyphicon-earphone"></span>+91-8767488645</a></li>
+                                <li><a class="li_lings sign_login" href="./index.html"><span
+                                            class="glyphicon glyphicon-user"></span> Exit</a></li>
+                            </ul>
+                        </div>
+                </nav>
+            <header class="inner-page">
+                <div class="container">
+                    <div class="row">
+                            <h1 class="login">LOGIN</h1>
+                    </div>
+                </div>
+            </header>
+
+            <section class="white">
+                <div class="container">
+                    <h1 class="apps">AAPS BillSoft v1</h1>
+                    <h3 class="text-center font_weight_300">You can use Username and Password to login to your account
+                    </h3>
+                    <br /><br /><br />
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-7 ">
+                        <div class="col-md-12"
+                            style="background-color: white;padding: 40px;box-shadow:0px 0px 3px grey; left: 300px;">
+                            <form class="form_signup">
+                                <div class="form-group col-md-6">
+                                    <LABEL for="name">User Name <span class="color_red">* </span></LABEL>
+                                    <input name="txtname" type="text" maxlength="50" id="txtname" required=""
+                                        class="form-control" />
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <LABEL for="Password">Password <span class="color_red">* </span></LABEL>
+                                    <input name="txtemail" type="password" maxlength="100" id="txtemail" required=""
+                                        class="form-control" />
+                                </div>
+
+                        </div>
+                        <br /><br />
+                        <div class="acpt" style=" display: inline-block; position: relative; left: 475px;">
+                            <input type="checkbox" name="chksubscribe"><label for="chksubscribe"> Accept all terms and
+                                condition</label>
+                        </div>
+                        <br /><br />
+                        <a href="./index.html" name="btnsubmit" value="SUBMIT" id="btnsubmit"
+                            class="btn col-xs-8 btn_blue" required>Submit</a>
+                        <!-- <input type="submit" name="btnsubmit" value="Login" id="btnsubmit" class="btn col-xs-8 btn_blue" style= "display: inline-block; position: relative; left: 400px;"href="index.html" > -->
+                    </div>
+    </form>
+
+
+
+
+
+</body>
+
+</html>

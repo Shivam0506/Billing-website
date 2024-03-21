@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <title>
+        Signup Page
+    </title>
+    <link rel="stylesheet" href="main_style.css" />
+    <link rel="stylesheet" href="price.css" />
+    <style>
+        body {
+            font-family: Segoe UI, "Helvetica Neue", Helvetica, Arial, sans-serif;
+        }
+
+        input[type="text"] {
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-radius: 0px;
+            box-shadow: none;
+        }
+
+        input[type="text"]:focus {
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-radius: 0px;
+            box-shadow: none;
+            border-bottom: 1px solid #0078d7b3;
+        }
+
+        input[type="email"] {
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-radius: 0px;
+            box-shadow: none;
+        }
+
+        input[type="email"]:focus {
+            border-top: none;
+            border-right: none;
+            border-left: none;
+            border-radius: 0px;
+            box-shadow: none;
+            border-bottom: 1px solid #0078d7b3;
+        }
+
+        .modal-footer {
+            border-top: none;
+        }
+
+        .agree_class li {
+            text-align: justify-all;
+        }
+
+        .Form {
+            justify-content: center;
+            margin: auto;
+            align-items: center;
+        }
+
+        .col-md-12 {
+            margin: auto;
+            align-items: center;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <form method="post" action="./index.html" id="form1">
+        <div class="main_div_full">
+                <nav class="navbar container_height70 header_top_color">
+                    <div class="container-fluid">
+                        <div class="navbar-header">
+
+                            <a class="navbar-brand"><img class="img-responsive mar_top_desktop" src="aaps logo.jpeg"
+                                    height="200px" width="170px"></a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="nav navbar-nav mobile_nav desk_top">
+                                <li><a class="li_lings" href="/features/">FEATURES</a></li>
+                                <li><a class="li_lings" href="/pricing/">LEARN MORE</a></li>
+                                <li><a class="li_lings" href="/gst/gst-info/">HELP </a></li>
+                                <li><a class="li_lings" href="/faq/">FAQ</a></li>
+                                <li><a class="li_lings" href="/contact/">CONTACT US</a></li>
+                            </ul>
+                            <ul class="nav navbar-nav navbar-right mobile_nav mobile_up">
+                                <li><a class="li_lings sign_login sing_up"><span
+                                            class="glyphicon glyphicon-earphone"></span>+91-8767488645</a></li>
+                                <li><a class="li_lings sign_login" href="./index.html"><span
+                                            class="glyphicon glyphicon-user"></span> Exit</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            <header class="inner-page">
+                <div class="container">
+                    <div class="row">
+                            <h1>SIGN UP</h1>
+                    </div>
+                </div>
+            </header>
+
+            <section class="white">
+                <div class="container">
+                    <h1 class="text-center font_weight_200 font_size_48">AAPS BillSoft v1</h1>
+                    <h3 class="text-center font_weight_300">Sign up for free </h3>
+
+                    <br /><br /><br />
+                </div>
+                <div class="Form">
+                    <div class="row">
+                        <div class="col-md-7 ">
+                            <div class="col-md-12"
+                                style="background-color: white;padding: 40px;box-shadow:0px 0px 3px grey; margin: auto; left: 400px;">
+                                <form class="form_signup">
+                                    <div class="form-group col-md-6">
+                                        <LABEL for="name">Name <span class="color_red">* </span></LABEL>
+                                        <input name="txtname" type="text" maxlength="50" id="txtname" required
+                                            class="form-control" />
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <LABEL for="email">Email <span class="color_red">* </span></LABEL>
+                                        <input name="txtemail" type="text" maxlength="100" id="txtemail" required
+                                            class="form-control" />
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <LABEL for="name">Mobile No <span class="color_red">* </span></LABEL>
+                                        <input name="txtmobile" type="text" maxlength="15" id="txtmobile" required
+                                            class="form-control" />
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <LABEL for="email">City <span class="color_red">* </span></LABEL>
+                                        <input name="txtcity" type="text" maxlength="50" id="txtcity" required
+                                            class="form-control" />
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="comment">What is your business? <span
+                                                class="color_red">*</span></label>
+                                        <input name="txtbusiness" type="text" maxlength="50" id="txtbusiness" required
+                                            class="form-control" />
+                                    </div>
+                                    <div class="form-group col-md-6">
+                                        <label for="comment">Password <span class="color_red">*</span></label>
+                                        <input name="txtbusiness" type="password" maxlength="50" id="txtbusiness"
+                                            requiredclass="form-control" />
+
+                                    </div>
+                                    <br /><br />
+                                    <div class="clearfix"></div>
+                                    <div class="form-group col-md-offset-2">
+                                        <br />
+                                        <input id="chksubscribe" type="checkbox" name="chksubscribe" /><label
+                                            for="chksubscribe"> Accept all terms and condition</label>
+                                        <br /><br />
+                                        <a href="./index.html" name="btnsubmit" value="SUBMIT" id="btnsubmit"
+                                            class="btn col-xs-8 btn_blue">Submit</a>
+                                        <!-- <button name="btnsubmit" value="SUBMIT" id="btnsubmit"
+                                                class="btn col-xs-8 btn_blue" href="./index.html">submit</button> -->
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+
+</body>
+
+</html>

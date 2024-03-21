@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>
+        AAPS Software
+    </title>
+    <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="main_style.css" />
+    <link rel="stylesheet" href="price.css" />
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .button1 {
+            width: 150px;
+            height: 150px;
+            border: 2em;
+            border-radius: 3px;
+            background: url("2.-Print-Multi-size-invoices.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgb(224, 224, 234);
+            border-color: #1e4682;
+            padding: 3px;
+        }
+
+        .button1:hover {
+            background-color: rgb(162, 162, 231);
+        }
+
+        .button2 {
+            width: 150px;
+            height: 150px;
+            border: 2em;
+            border-radius: 3px;
+            background: url("5.-GST-tax-invoice-and-bill-of-supply.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgb(224, 224, 234);
+            border-color: #1e4682;
+            padding: 3px;
+        }
+
+        .button2:hover {
+            background-color: rgb(162, 162, 231);
+        }
+
+        .button3 {
+            width: 150px;
+            height: 150px;
+            border: 2em;
+            border-radius: 3px;
+            background: url("3.-Use-barcode-scanner-for-quick-billing.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgb(224, 224, 234);
+            border-color: #1e4682;
+            padding: 3px;
+        }
+
+        .button3:hover {
+            background-color: rgb(162, 162, 231);
+        }
+
+        .button4 {
+            width: 150px;
+            height: 150px;
+            border: 2em;
+            border-radius: 3px;
+            background: url("6.-manage-client-accounts.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgb(224, 224, 234);
+            border-color: #1e4682;
+            padding: 3px;
+        }
+
+        .button4:hover {
+            background-color: rgb(162, 162, 231);
+        }
+
+        .button5 {
+            width: 150px;
+            height: 150px;
+            border: 2em;
+            border-radius: 3px;
+            background: url("11.-detailed-business-reports-.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgb(224, 224, 234);
+            border-color: #1e4682;
+            padding: 3px;
+        }
+
+        .button5:hover {
+            background-color: rgb(162, 162, 231);
+        }
+
+        .button6 {
+            width: 150px;
+            height: 150px;
+            border: 2em;
+            border-radius: 3px;
+            background: url("10.-gst-tax-calculations.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgb(224, 224, 234);
+            border-color: #1e4682;
+            padding: 3px;
+        }
+
+        .button6:hover {
+            background-color: rgb(162, 162, 231);
+        }
+
+        .button7 {
+            width: 150px;
+            height: 150px;
+            border: 2em;
+            border-radius: 3px;
+            background: url("13.-manages-staff-salary.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgb(224, 224, 234);
+            border-color: #1e4682;
+            padding: 3px;
+        }
+
+        .button7:hover {
+            background-color: rgb(162, 162, 231);
+        }
+
+        .button8 {
+            width: 150px;
+            height: 150px;
+            border: 2em;
+            border-radius: 3px;
+            background: url("14-sms-and-email-support.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgb(224, 224, 234);
+            border-color: #1e4682;
+            padding: 3px;
+        }
+
+        .button8:hover {
+            background-color: rgb(162, 162, 231);
+        }
+
+        .button9 {
+            width: 150px;
+            height: 150px;
+            border: 2em;
+            border-radius: 3px;
+            background: url("16.-generate-gstr-reports.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgb(224, 224, 234);
+            border-color: #1e4682;
+            padding: 3px;
+        }
+
+        .button9:hover {
+            background-color: rgb(162, 162, 231);
+        }
+
+        .button10 {
+            width: 150px;
+            height: 150px;
+            border: 2em;
+            border-radius: 3px;
+            background: url("201-2013361_free-icons-png-open-door-exit-icon-sc-1-st-freeiconspng-stock.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgb(224, 224, 234);
+            border-color: #1e4682;
+            padding: 3px;
+        }
+
+        .button10:hover {
+            background-color: rgb(162, 162, 231);
+        }
+
+        .button11 {
+            width: 150px;
+            height: 150px;
+            border: 2em;
+            border-radius: 3px;
+            background: url("pngtree-financial-closing-stock-illustration-image_1427558.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgb(224, 224, 234);
+            border-color: #1e4682;
+            padding: 3px;
+        }
+
+        .button11:hover {
+            background-color: rgb(162, 162, 231);
+        }
+
+        .button12 {
+            width: 150px;
+            height: 150px;
+            border: 2em;
+            border-radius: 3px;
+            background: url("15.-automated-data-backup-and-restoration.png");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgb(224, 224, 234);
+            border-color: #1e4682;
+            padding: 3px;
+        }
+
+        .button12:hover {
+            background-color: rgb(162, 162, 231);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar container_height70 header_top_color">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand"><img class="img-responsive mar_top_desktop" src="aaps logo.jpeg" width="150px"
+                        height="150px"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav mobile_nav desk_top">
+                    <li><a class="li_lings" href="#">FEATURES</a></li>
+                    <li><a class="li_lings" href="#">PRICING</a></li>
+                    <li><a class="li_lings" href="#">HELP</a></li>
+                    <li><a class="li_lings" href="#">CONTACT US</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right mobile_nav mobile_up">
+                    <li><a class="li_lings sign_login sing_up" href="#" style="color:green">Send Feedback</a></li>
+                    <li><a class="li_lings sign_login sing_up" href="#" style="color:blue"> <span
+                                class="glyphicon glyphicon-globe"></span> Setting</a>
+                    </li>
+                    <li><a class="li_lings sign_login sing_up"><span
+                                class="glyphicon glyphicon-earphone"></span>+91-8767488645</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="mar_din"
+        style="background-image: url(background1.jpeg); border-top: 1px solid white; position: relative;"
+        class="img-responsive">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                    <p class="w_color">A billing software which comes with inventory, accounting, GST, barcode,
+                        SMS, email & android app</p>
+                    <h1 class="w_color">User friendly and powerful billing software</h1>
+                    <br><br>
+                    <a href="Signup.html" class="primary-cta">SIGN UP</a>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <a href="Login1.html" class="primary-cta">LOGIN</a>
+                    <p class="w_color font_19"></p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="seen-in-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <ul>
+                        <li class="small-text"><span class="glyphicon glyphicon-user"></span> Simplicity &nbsp;
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </li>
+                        <li class="small-text"><span class="glyphicon glyphicon-map-marker"> </span>Usability
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</li>
+                        <li class="small-text"><span class="glyphicon glyphicon-flag"></span>Functionality
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</li>
+                        <li class="small-text"><span class="glyphicon glyphicon glyphicon-certificate"></span>
+                            Support &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="grey" >
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>Easy and powerful GST billing software for:</h2>
+                    <h3><span class="medium-text">Small Businesses, Retailers, Wholesalers, Restaurant, Service
+                            Providers and many more...</span></h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>AAPS BillSoft v1</h2>
+                    <h3>Start using our billing software which comes with best in class smart features to help
+                        your business grow.</h3>
+                </div>
+            </div>
+            <div class="row main-features">
+                <div class="col-md-4 col-sm-4 text-center">
+                    <div class="main-feature-item">
+                        <a href="http://localhost/Appsphp/invoice-system-php/invoice_list.php">
+                            <button type="button" class="button1"></button></a>
+                        <p class="main-feature-title">New Sale Invoice</p>
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 text-center">
+                    <div class="main-feature-item"><a
+                            href="http://localhost/Appsphp/invoice-system-php/invoice_list.php">
+                            <button type="button" class="button2"></button></a>
+                        <p class="main-feature-title">New purchase invoice</p>
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 text-center">
+                    <div class="main-feature-item">
+                        <a href="barcode.html">
+                            <button type="button" class="button3"></button></a>
+                        <p class="main-feature-title">generate Barcode </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4 text-center">
+                    <div class="main-feature-item">
+                        <button type="button" class="button4"></button>
+                        <p class="main-feature-title">Dealer management</p>
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 text-center">
+                    <div class="main-feature-item">
+                        <button type="button" class="button5"></button>
+                        <p class="main-feature-title">Bill summary</p>
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 text-center">
+                    <div class="main-feature-item">
+                        <a href="gst.html">
+                            <button type="button" class="button6"></button>
+                        </a>
+                        <p class="main-feature-title">gst calculator</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-4 text-center">
+                    <div class="main-feature-item">
+                        <button type="button" class="button7"></button>
+                        <p class="main-feature-title">Manage Staff salary</p>
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 text-center">
+                    <div class="main-feature-item">
+                        <button type="button" class="button8"></button>
+                        <p class="main-feature-title">SMS and email support</p>
+
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 text-center">
+                    <div class="main-feature-item">
+                        <button type="button" class="button9"></button>
+                        <p class="main-feature-title">GSTR reports</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <section class="container-fluid grey">
+        <div class="container">
+            <div class="col-md-4" style="padding: 15px;">
+                <h3 style="margin-top: 15%;">We are here to help!</h3>
+                <p class="text_justify">Whether you are a freelancer or a small business owner, we can help you
+                    streamline your business and keep track of your day to day activities.</p>
+                <a class="btn btn_blue btn-lg text-center" href="#">CONTACT US</a>
+            </div>
+            <div class="col-md-8">
+                <br />
+                <div class="slider">
+                    <figure>
+                        <div class="slide">
+                            <h1>Pradip &
+                                Shivam
+                            </h1>
+                            <img src="./c11.jpg" alt="this is first img">
+                        </div>
+                        <div class="slide">
+                            <h1>Atharva &
+                                Adil </h1>
+                            <img src="./C5NEW.jpg" alt="this is second img">
+                        </div>
+                        <div class="slide">
+                            <h1> OUR MENTOR</h1>
+                            <img src="c6.jpg" alt="this is third img">
+                        </div>
+                        <div class="slide">
+                            <h1></h1>
+                            <img src="./vitimg.png" alt="this is last img">
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <section class="white" style="border-bottom:1px solid; ">
+        <div class="container">
+            <div class="row about-sleek">
+                <div class="col-md-12 text-center">
+                    <h2>About Us</h2>
+                    <p>We are the students of <b>VIDYALANKAR INSTITUE OF TECHNOLOGY</b> This is our mini project for
+                        SE sem-3 under the guidance of <b>Prof. AMIT AYLANI</b> <br>
+                    <ul>
+                        <Li>
+                            Shivam Mahadik(21102B0003)
+                        </Li>
+                        <Li>
+                            Atharva Ingole (21102B0012)
+                        </Li>
+                        <Li>
+                            Adil Khan(21102B0039)
+                        </Li>
+                        <Li>
+                            Pradip Garhwal(21102B0010)
+                        </Li>
+                    </ul><br />So let's simplify your business together.</p>
+                    <a href="#" class="ghost-cta">learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="custom-contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h2>Billing becomes more easier.</h2>
+                    <p>Download Hitech BillSoft latest version from anywhere, and it's free. Supports Windows 7, 8,
+                        8.1 and 10.</p><br><br>
+                    <a href="/download/" class="primary-cta">RATE US</a> <br /><br />*Paid version also available
+                    with lifetime validity.
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row footer-menu">
+                <div class="col-md-3 col-xs-6 col-sm-3">
+                    <ul>
+                        <li class="footer_head_01"><a href="/features/"> Information</a></li>
+                        <li><a href="/features/">Features</a></li>
+                        <li><a href="/pricing/">Pricing</a></li>
+                        <li><a href="/advantages/">Advantages</a></li>
+                        <li><a href="/features/new/">New Features</a></li>
+                        <li><a href="/features/advanced">Advanced Features</a></li>
+                        <li><a href="/restaurant-billing-software">Restaurant Billing</a></li>
+                        <li><a href="/about/">About Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-xs-6 col-sm-3">
+                    <ul>
+                        <li class="footer_head_01"><a href="/features/"
+                                onclick="if (!window.__cfRLUnblockHandlers) return false; if (!window.__cfRLUnblockHandlers) return false; "
+                                data-cf-modified-e77af691fcc54673d5aca23f-=""
+                                data-cf-modified-f0be127a9222bea9d88e8535-=""> Features</a></li>
+                        <li><a href="/features/client-management/">Client Management</a></li>
+                        <li><a href="/features/sale-management/">Sale Management</a></li>
+                        <li><a href="/features/purchase-management/">Purchase Management</a></li>
+                        <li><a href="/features/staff-management/">Staff Management</a></li>
+                        <li><a href="/features/account-management/">Account Management</a></li>
+                        <li><a href="/features/inventory-management/">Inventory Management</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-xs-6 col-sm-3">
+                    <ul>
+                        <li class="footer_head_01"><a href="/gst/gst-info/"
+                                onclick="if (!window.__cfRLUnblockHandlers) return false; if (!window.__cfRLUnblockHandlers) return false; "
+                                data-cf-modified-e77af691fcc54673d5aca23f-=""
+                                data-cf-modified-f0be127a9222bea9d88e8535-=""> GST</a></li>
+                        <li><a href="/gst/gst-info/">GST Info</a></li>
+                        <li><a href="/gst/gst-terms/">GST Terms</a></li>
+                        <li><a href="/gst/e-way-bill/">GST E-Way Bill</a></li>
+                        <li><a href="/gst/composition/">GST Composition Scheme</a></li>
+                        <li><a href="gst/gstr-1/">How to file GSTR-1</a></li>
+                        <li><a href="gst/gstr-2/">How to file GSTR-2</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3 col-xs-6 last_footer_01 col-sm-3">
+                    <ul>
+                        <li class="footer_head_01"><a href="/contact/"
+                                onclick="if (!window.__cfRLUnblockHandlers) return false; if (!window.__cfRLUnblockHandlers) return false; "
+                                data-cf-modified-e77af691fcc54673d5aca23f-=""
+                                data-cf-modified-f0be127a9222bea9d88e8535-=""> Support</a></li>
+                        <li><a href="/contact/">Contact</a></li>
+                        <li><a href="/faq/">FAQ</a></li>
+                        <li><a href="/partner/">Partner Program</a></li>
+                        <li><a href="/partner/login/">Partner Login</a></li>
+                        <li><a href="/terms-of-use/">Terms of Use</a></li>
+                        <li><a href="/privacy-policy/">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xs-12 col-sm-3">
+                    <p><i class="fas fa-globe-asia fa-lg" style="margin-right: 5px;"></i><a style="color: #616161;"
+                            href="#">Facebook</a> &nbsp; &nbsp;<a style="color: #616161;" href="#">Youtube</a></p>
+                </div>
+                <div class="col-md-8 col-xs-12 col-sm-9">
+                    <ul class="footer_nav breadcrumb pull-right">
+                        <li> <a href="/about/"> About Us</a></li>
+                        <li> <a href="/contact/">Contact Us</a></li>
+                        <li> <a href="/faq/"> FAQ</a></li>
+                        <li> <a href="/privacy-policy/"> Privacy Policy</a></li>
+                        <li> <a href="/terms-of-use/"> Terms of Use</a></li>
+                        <li> <a href="https://billingsoftwareindia.in"> © AAPS 2022</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </div>
+    </form>
+</body>
+
+</html>

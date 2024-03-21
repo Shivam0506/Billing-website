@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+.con{
+    position: relative;
+    top: 15px;
+    text-align: center;  
+}
+.o1{
+    background-color: rgb(219, 204, 185);
+    color: #03989e;
+    height: 30vh;
+}
+.img{
+    position: relative;
+    
+    left: -5px;
+ 
+}
+.p1{
+    margin: 20px;
+    text-align: center;
+}
+.button{
+    font-size: larger;
+    color: green;
+    text-align: center;
+    height: 5vh;
+    width: 20vh;
+}
+.div{
+    text-align: center;
+}
+button:hover{
+    background-color: rgb(160, 232, 207); 
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="o1">
+            <div class="con">
+                <div class="img">
+                  <img src="logo.jpg" height="110px" width="110px">
+                </div>
+                <p class="con"> This is all in one Billing Website</p> </div> 
+          </h1>
+     </header>
+     <div><h5 class="p1">Required fields are followed by "*"</h5>
+    <form action="index1.html">
+        <h1 class="p1">Login Form</h1>
+        <p class="p1">Name:* <input type="text" name="name" id="name" required></p>
+        <p class="p1">Pincode:* <input type="number" name="pincode" id="pincode" required> </p>
+        <p class="p1">Address:*<textarea name="address" id="address" cols="100" rows="5"required ></textarea> </p>
+       <p class="p1">Email:* <input type="email" name="email" id="email" required></p>
+       <p class="p1">Mobile number:* <input type="number" name="number" id="Mno" required ></p>
+       <p class="p1"> Password:*<input type="password" name="password" id="password" required> </p>
+       <p class="p1">Name(as to appear when login)*: <input type="text" name="name" id="1name" required> </p>
+       <p class="p1"> <button class="button" type="button">Submit</button>
+       </p>
+    </div>
+    </form>
+</body>
+</html>
